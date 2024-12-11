@@ -1,5 +1,5 @@
 {
-  "homepage": "https://MOHANNAD-HY.github.io/ToDo-React-app",
+  "homepage": "https://MOHANNAD-HY.github.io/ToDo",
   "name": "todo",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mui/icons-material": "^6.1.10",
