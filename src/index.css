@@ -1,0 +1,30 @@
+body {
+  background-color: #00010c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f2f7f3;
+}
+
+.glassEffect {
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.21)#71adb5; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #71adb5; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #71adb5; /* creates padding around scroll thumb */
+}

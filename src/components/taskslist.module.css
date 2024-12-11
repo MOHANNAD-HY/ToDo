@@ -1,0 +1,61 @@
+.lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.todolist,
+.completedlist {
+  padding: 1rem;
+  width: 40%;
+  border: 1px solid;
+  border-radius: 1rem;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.todolist {
+  border-color: #71adb5;
+}
+
+.completedlist {
+  border-color: #ff204e;
+  text-decoration: line-through;
+}
+
+.todolist::before {
+  content: "ToDo Tasks";
+  position: absolute;
+  background-color: #00010c;
+  color: #71adb5;
+  left: 20px;
+  top: -15px;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.25rem 0.5rem;
+}
+
+.completedlist::after {
+  content: "Completed Tasks";
+  position: absolute;
+  background-color: #00010c;
+  color: #ff204e;
+  left: 20px;
+  top: -15px;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.25rem 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .lists {
+    flex-direction: column;
+  }
+  .todolist,
+  .completedlist {
+    width: 90%;
+  }
+}

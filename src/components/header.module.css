@@ -1,0 +1,50 @@
+header {
+  max-width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  margin-bottom: 3rem;
+}
+
+header::after,
+header::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #71adb5;
+  opacity: 0.9;
+}
+
+header::before {
+  left: -35px;
+  border-radius: 16px 0 0 16px;
+  transform: skewX(-30deg);
+}
+
+header::after {
+  right: -35px;
+  border-radius: 0 16px 16px 0;
+  transform: skew(30deg);
+}
+
+h2 {
+  color: #71adb5;
+}
+/*
+h2::after,
+h2::before {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  height: 100%;
+  width: 50%;
+}
+
+h2::after {
+  right: -220px;
+} */
